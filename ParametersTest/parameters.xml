@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="Mail Server" description="Mail server to enter into config" tags="Hidden,NoStore" defaultValue="__MailServer__">
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\Sitecore\.Smtp\.config$" match="//sitecore/settings/setting[@name='MailServer']/@value" />
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\EmailExperience\\Sitecore\.EDS\.Providers\.CustomSmtp\.config$" match="//*[local-name()='server']/text()" />
+  </parameter>
+  <parameter name="Mail Server User Name" description="Mail Server User Name to enter into config" tags="Hidden,NoStore" defaultValue="__MailServerUserName__">
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\Sitecore\.Smtp\.config$" match="//sitecore/settings/setting[@name='MailServerUserName']/@value" />
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\EmailExperience\\Sitecore\.EDS\.Providers\.CustomSmtp\.config$" match="//*[local-name()='userName']/text()" />
+  </parameter>
+  <parameter name="Mail Server Password" description="Mail Server Password to enter into config" tags="Hidden,NoStore" defaultValue="__MailServerPassword__">
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\Sitecore\.Smtp\.config$" match="//sitecore/settings/setting[@name='MailServerPassword']/@value" />
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\EmailExperience\\Sitecore\.EDS\.Providers\.CustomSmtp\.config$" match="//*[local-name()='password']/text()" />
+  </parameter>
+  <parameter name="Mail Server Port" description="Mail Server Port to enter into config" tags="Hidden,NoStore" defaultValue="__MailServerPort__">
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\Sitecore\.Smtp\.config$" match="//sitecore/settings/setting[@name='MailServerPort']/@value" />
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\EmailExperience\\Sitecore\.EDS\.Providers\.CustomSmtp\.config$" match="//*[local-name()='port']/text()" />
+  </parameter>
+  <parameter name="EXM Mail Server SSL or TLS Enabled" description="EXM Mail Server SSL/TLS enabled to enter into config" tags="Hidden,NoStore" defaultValue="__MailServerSslOrTlsEnabled__">
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\EmailExperience\\Sitecore\.EDS\.Providers\.CustomSmtp\.config$" match="//*[local-name()='startTls']/text()" />
+  </parameter>
+  <parameter name="EXM Mail Server Authentication Method" description="EXM Mail Server Authentication Method to enter into config" tags="Hidden,NoStore" defaultValue="__MailServerAuthenticationMethod__">
+    <parameterEntry kind="XmlFile" scope="App_Config\\Include\\EmailExperience\\Sitecore\.EDS\.Providers\.CustomSmtp\.config$" match="//*[local-name()='authenticationMethod']/text()" />
+  </parameter>
+</parameters>

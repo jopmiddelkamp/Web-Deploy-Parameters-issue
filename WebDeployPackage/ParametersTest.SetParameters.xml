@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="ParametersTest" />
+  <setParameter name="Mail Server" value="__MailServer__" />
+  <setParameter name="Mail Server User Name" value="__MailServerUserName__" />
+  <setParameter name="Mail Server Password" value="__MailServerPassword__" />
+  <setParameter name="Mail Server Port" value="__MailServerPort__" />
+  <setParameter name="EXM Mail Server SSL or TLS Enabled" value="__MailServerSslOrTlsEnabled__" />
+  <setParameter name="EXM Mail Server Authentication Method" value="__MailServerAuthenticationMethod__" />
+</parameters>
